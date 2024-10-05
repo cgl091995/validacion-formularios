@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>práctica formulario</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div><h1>REGISTRARSE EN EL CLUB</h1></div>
+    <div><H2>DATOS PERSONALES:</H2></div>
+    <div>
+        <form id="formulario">
+
+            <div class="form1" id="formulario1">
+
+                <label for="nombre" autofocus>Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="form2" id="formulario2">
+
+                <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos">
+            </div>
+
+            <div class="form3" id="formulario3">
+
+                <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" placeholder="Selecciona tu edad">
+            </div>
+
+            <div class="form4" id="formulario4">
+
+                <label for="sexo">Sexo:</label>
+                    <input type="radio" id="sexo" name="genero" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="sexo" name="genero" value="mujer"><label for="mujer">Mujer</label>
+            </div>
+
+            <div class="form5" id="formulario5">
+                    <label for="me siento del club">Me siento del club:</label>
+                        <input type="checkbox" id="meSientoDelClub" name="me siento del club" value="sí">
+            </div>
+
+        
+            <div class="form6" id="formulario6"> 
+                <label for="escribe algo sobre ti">Escribe algo sobre ti:</label>   
+                <textarea id="escribeAlgoSobreTi" name="escribe algo sobre ti" rows="4" cols="50" placeholder="Escribe algo sobre ti"></textarea>
+            </div>
+
+            <div class="form7" id="formulario7">
+                <fieldset>
+                        <legend>Datos de contacto<legend>                   
+                        <label for="correo electronico">Correo electrónico:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">       
+                </fieldset>
+            </div>
+
+
+            <div class="controls">
+                <input type="submit" value="Send" />
+                <input type="reset" value="Reset" />
+            </div> 
+            
+        
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

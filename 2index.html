@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="css/second.css">
+</head>
+<body>
+   <h1 id="titulo">FORMULARIO 2 - REGISTRAR EL ROBO DE UNA BICILETA</h1> 
+<form>
+    <label for="date">Día:</label>
+    <input type="date" id="date" name="date">
+
+    <label for="time">Hora:</label>
+    <input type="time" id="time" name="time">
+
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color"> 
+
+    <label for="tipo de bicicleta">Tipo de bicicleta:</label>
+    <select id="tipo de bicicleta" name="tipo de bicicleta">
+        <optgroup value="Urbana">
+            <option value="1">Bicicleta Clásica</option>
+            <option value="2">Bicicleta pegable</option>
+            <optio value="3">Bicicleta Eléctrica</option>
+            <option value="4">Bicicleta Commuter</option>
+        </optgroup>
+        <optgroup value="Montania">
+            <option value="5">Bicicleta de tipo Sport</option>
+            <option value="6">Bicicleta de tipo Trail o Hard Trail</option>
+            <option value="7">Bicicleta para XC o Cross Country</option>
+        </optgroup>
+        <optgroup value="Carreras">
+            <option value="8">Bicicleta Gran Fondo</option>
+            <option value="9">Bicicleta Racing</option>
+            <option value="10">Bicicletas Aero</option>
+        </optgroup>
+    </select>
+
+    
+    <label for="Accesorios">ACCESORIOS:</label>
+        <input type="checkbox" name="Accesorios" value="sí">Ruedines <br>
+        <input type="checkbox" name="Accesorios" value="sí">Hinchadores <br>
+        <input type="checkbox"  name="Accesorios" value="sí">Bomba de aire <br>
+        <input type="checkbox"  name="Accesorios" value="sí">Alforja <br>
+        <input type="checkbox"  name="Accesorios" value="sí">Sillaportabebés
+      
+
+        <label for="marca">Qué marca de bici era?:</label>
+        <input list="marca de bici" id="marca" name="marca" />
+        
+        <datalist id="marca de bici">
+          <option value="specialized"></option>
+          <option value="trek"></option>
+          <option value="merida"></option>
+          <option value="scott"></option>
+          <option value="giant"></option>
+          <option value="cube"></option>
+          <option value="lapierre"></option>
+          <option value="orbea"></option>
+          <option value="cannondale"></option>
+          <option value="bmc"></option>
+          <option value="canyon"></option>
+          <option value="look"></option>
+          <option value="protek"></option>
+          <option value="megamo"></option>
+          <option value="pinarello"></option>
+          <option value="bianchi"></option>
+          <option value="bh"></option>
+          <option value="factor"></option>
+          <option value="ghost"></option>
+          <option value="cervelo"></option>
+        </datalist>
+
+    <div>
+            <input type="submit" value="Send" />
+            <input type="reset" value="Reset" />
+    </div>    
+
+</form>
+</body>
+</html>
